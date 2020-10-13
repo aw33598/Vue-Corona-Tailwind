@@ -1,0 +1,37 @@
+[debug] [2020-10-13T15:51:24.819Z] ----------------------------------------------------------------------
+[debug] [2020-10-13T15:51:24.821Z] Command:       /home/abdul-wahab/.nvm/versions/node/v14.5.0/bin/node /home/abdul-wahab/.nvm/versions/node/v14.5.0/bin/firebase deploy
+[debug] [2020-10-13T15:51:24.821Z] CLI Version:   8.12.1
+[debug] [2020-10-13T15:51:24.821Z] Platform:      linux
+[debug] [2020-10-13T15:51:24.822Z] Node Version:  v14.5.0
+[debug] [2020-10-13T15:51:24.862Z] Time:          Tue Oct 13 2020 20:51:24 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-10-13T15:51:24.862Z] ----------------------------------------------------------------------
+[debug] [2020-10-13T15:51:24.863Z] 
+[debug] [2020-10-13T15:51:24.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-13T15:51:24.924Z] > authorizing via signed-in user
+[debug] [2020-10-13T15:51:24.924Z] [iam] checking project vue-corona-19-tailwind for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-13T15:51:24.928Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-13T15:51:24.928Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-13T15:51:25.841Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 13 Oct 2020 15:51:25 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-13T15:51:26.078Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vue-corona-19-tailwind:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-13T15:51:28.269Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 13 Oct 2020 15:51:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1169","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-13T15:51:28.273Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/vue-corona-19-tailwind  
+ 
+[debug] [2020-10-13T15:51:28.912Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 13 Oct 2020 15:51:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'vue-corona-19-tailwind'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-13T15:51:28.916Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-corona-19-tailwind/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-13T15:51:31.546Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 13 Oct 2020 15:51:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[vue-corona-19-tailwind]: beginning deploy... 
+[info] i  hosting[vue-corona-19-tailwind]: found 272 files in dist 
+[debug] [2020-10-13T15:51:31.928Z] [hosting] hash cache [ZGlzdA] stored for 272 files
+[debug] [2020-10-13T15:51:31.930Z] [hosting][hash queue][FINAL] {"max":160,"min":21,"avg":34.3014705882353,"active":0,"complete":272,"success":272,"errored":0,"retried":0,"total":272,"elapsed":347}
+[debug] [2020-10-13T15:51:31.931Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vue-corona-19-tailwind/versions/736b2720710ec7b8:populateFiles  
+ <request body omitted>
+[debug] [2020-10-13T15:51:35.082Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 13 Oct 2020 15:51:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-13T15:51:35.086Z] [hosting][populate queue][FINAL] {"max":3159,"min":3159,"avg":3159,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3162}
+[debug] [2020-10-13T15:51:35.086Z] [hosting] uploads queued: 4

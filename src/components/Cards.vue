@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 my-16">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+  <div class="max-w-6xl mx-auto px-4 md:px-2 my-16">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 md:gap-6">
       <div class="px-6 pt-10 pb-6 rounded-md shadow-md border-t-8 border-blue-400 bg-white">
         <h4 class="px-3 py-1 inline-block rounded-full bg-blue-100 text-blue-800 text-xs uppercase">Confirmed</h4>
         <h1 class="mt-4 text-4.5xl text-gray-800 font-medium">{{ getCommaSeperatedValue(stats.confirmed.value) }}</h1>
