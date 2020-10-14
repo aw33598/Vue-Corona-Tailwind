@@ -15,7 +15,7 @@
 
       <div v-show="showCountryPicker" class="absolute rounded-md shadow outline-none border focus:outline-none mt-2 h-48 overflow-y-scroll bg-white mb-16">
         <ul class="list-none">
-          <li @click="setCountry(country)" v-for="country in countries" :key="country" class="cursor-pointer flex justify-between px-3 py-2 bg-white hover:bg-blue-100">
+          <li :class="country === selectedCountry ? 'bg-blue-100' : null" @click="setCountry(country)" v-for="country in countries" :key="country" class="cursor-pointer flex justify-between px-3 py-2 bg-white hover:bg-blue-100">
             <div class="flex items-center space-x-3">
               <img class="h-5" :src="require(`@/assets/flags/${country}.svg`)" :alt="country">
               <p :class="country === selectedCountry ? 'font-medium' : null" class="text-sm text-gray-800 w-64 lg:w-72 text-left">{{ country }}</p>
