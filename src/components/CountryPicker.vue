@@ -13,7 +13,7 @@
         </span>
       </button>
 
-      <div v-show="showCountryPicker" class="absolute rounded-md shadow outline-none border focus:outline-none mt-2 h-48 overflow-y-scroll bg-white mb-16">
+      <div v-show="showCountryPicker" class="z-10 absolute rounded-md shadow outline-none border focus:outline-none mt-2 h-48 overflow-y-scroll bg-white mb-16">
         <ul class="list-none">
           <li :class="country === selectedCountry ? 'bg-blue-100' : null" @click="setCountry(country)" v-for="country in countries" :key="country" class="cursor-pointer flex justify-between px-3 py-2 bg-white hover:bg-blue-100">
             <div class="flex items-center space-x-3">
